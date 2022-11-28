@@ -1,1 +1,1 @@
-# construct-zine
+# destruct-zine
