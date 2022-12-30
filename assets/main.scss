@@ -47,6 +47,10 @@ a {
     font-family:"Libre Barcode 39 Text";
     @include relative-font-size(5.2);
     color: $border-color;
+
+    &:visited {
+        color: $border-color;
+    }
 }
 
 .site-description {
