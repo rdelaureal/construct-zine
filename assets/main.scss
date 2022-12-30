@@ -1,0 +1,122 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$border-color: #1a1a1a;
+$border-size: 15px;
+$date-color: #ffffff;
+
+body {
+    font-family:"Source Sans Pro", sans-serif;
+    background-color:ivory;
+}
+
+a {
+    color:crimson;
+    
+    &:hover {
+        background-color:black;
+        color:white;
+    }
+}
+
+::selection {
+    background-color:black;
+    color:white;
+}
+
+.wrapper {
+    background-color:#ffe8a6;
+}
+
+.site-header {
+    border-bottom: $border-size solid $border-color;
+    border-top:none;
+    margin-top:15px;
+    margin-bottom:15px;
+    rotate:-5deg;
+}
+
+.site-title {
+    font-family:"Libre Barcode 39 Text";
+    @include relative-font-size(5.2);
+    color: $border-color;
+}
+
+.site-description {
+    float:right;
+    margin-top:15px;
+}
+
+.site-footer {
+    rotate:-5deg;
+    border-top:$border-size solid $border-color;
+    font-family:"Space Mono", monospace;
+}
+
+#left-border {
+    position:fixed;
+    width:15px;
+    height:550px;
+    background-color:$border-color;
+}
+
+#right-border {
+    position:fixed;
+    width:15px;
+    height:550px;
+    background-color:$border-color;
+    bottom:0;
+    right:0;
+}
+
+.site-nav {
+    .page-link {
+        color:crimson;
+    
+        &:hover {
+            color:white;
+        }
+    }
+}
+
+.page-content {
+    padding: 30px 30px;
+}
+
+.post-link {
+    color:crimson;
+    font-family:"Space Mono", monospace;
+
+    &:hover {
+        background-color:black;
+        color:white;
+
+        .post-meta {
+            color:white;
+        }
+    }
+
+    .post-meta {
+        float:right;
+        padding-top:9px;
+    }
+}
+
+.post-meta {
+    color:$date-color;
+}
+
+time {
+    font-family:"Space Mono", monospace;
+}
+
+.post-title {
+    font-family:"Space Mono", monospace;
+}
+
+.p-author {
+    font-family:"Space Mono", monospace;
+}
